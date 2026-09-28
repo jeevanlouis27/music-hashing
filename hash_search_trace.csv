@@ -1,0 +1,6 @@
+Search ID,Hash,Slots Checked,Result,Final Slot Checked
+105,6,1,Found,6
+420,2,1,Found,2
+735,9,1,Found,9
+840,4,1,Found,4
+999,9,2,Not Found,10

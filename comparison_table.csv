@@ -1,0 +1,7 @@
+Metric,Hashing,Linear Search
+Average observed search operations,1.2,5.6
+Best-case complexity,O(1),O(1)
+Average-case complexity,O(1) expected,O(n)
+Worst-case complexity,O(n),O(n)
+Extra space,O(m),O(1)
+Collision dependency,Yes,No

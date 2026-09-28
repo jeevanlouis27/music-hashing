@@ -1,0 +1,48 @@
+MUSIC APPLICATION - HASHING ASSIGNMENT
+Hash function: h(k) = k % 11
+Collision resolution: Linear Probing
+
+INSERTION TRACE
+Insert 105: hash=6, final_slot=6, collisions=0
+Index :    0   1   2   3   4   5   6   7   8   9  10
+Value :    -   -   -   -   -   - 105   -   -   -   -
+
+Insert 210: hash=1, final_slot=1, collisions=0
+Index :    0   1   2   3   4   5   6   7   8   9  10
+Value :    - 210   -   -   -   - 105   -   -   -   -
+
+Insert 315: hash=7, final_slot=7, collisions=0
+Index :    0   1   2   3   4   5   6   7   8   9  10
+Value :    - 210   -   -   -   - 105 315   -   -   -
+
+Insert 420: hash=2, final_slot=2, collisions=0
+Index :    0   1   2   3   4   5   6   7   8   9  10
+Value :    - 210 420   -   -   - 105 315   -   -   -
+
+Insert 525: hash=8, final_slot=8, collisions=0
+Index :    0   1   2   3   4   5   6   7   8   9  10
+Value :    - 210 420   -   -   - 105 315 525   -   -
+
+Insert 630: hash=3, final_slot=3, collisions=0
+Index :    0   1   2   3   4   5   6   7   8   9  10
+Value :    - 210 420 630   -   - 105 315 525   -   -
+
+Insert 735: hash=9, final_slot=9, collisions=0
+Index :    0   1   2   3   4   5   6   7   8   9  10
+Value :    - 210 420 630   -   - 105 315 525 735   -
+
+Insert 840: hash=4, final_slot=4, collisions=0
+Index :    0   1   2   3   4   5   6   7   8   9  10
+Value :    - 210 420 630 840   - 105 315 525 735   -
+
+FINAL HASH TABLE
+Index :    0   1   2   3   4   5   6   7   8   9  10
+Value :    - 210 420 630 840   - 105 315 525 735   -
+
+SEARCH COMPARISON
+ID         Hash Result     Hash Ops        Linear Comparisons
+105        Found           1               1
+420        Found           1               4
+735        Found           1               7
+840        Found           1               8
+999        Not Found       2               8
